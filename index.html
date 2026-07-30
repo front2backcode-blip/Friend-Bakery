@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Friend Bakery – Fresh Every Day</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ======================== NAVBAR ======================== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-icon"></span>
+      <span class="logo-text">Friend <em>Bakery</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#offers">Offers</a>
+      <a href="#menu">Menu</a>
+      <!-- <a href="#extras">Extras</a> -->
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-wa nav-wa" href="https://wa.me/923063585556?text=Hi%20Friend%20Bakery%2C%20I%27d%20like%20to%20place%20an%20order!" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Order Now
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <img src="images/bak1.jpg" alt="Friend Bakery fresh baked goods" class="hero-bg-img" />
+  <div class="container hero-content">
+    <p class="hero-eyebrow">Welcome to Friend Bakery 🎉</p>
+    <h1 class="hero-title">Freshly Baked<br /><em>With Love</em></h1>
+    <p class="hero-sub">Handcrafted cakes, breads, pizzas &amp; more — straight from our oven to your table in Matli.</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn btn-primary">Explore Menu</a>
+      <a href="https://wa.me/923063585556?text=Hi%20Friend%20Bakery%2C%20I%27d%20like%20to%20place%20an%20order!" target="_blank" class="btn btn-wa">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Order on WhatsApp
+      </a>
+    </div>
+  <style>
+    .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(255, 105, 180, 0.4),   /* pink */
+    rgba(0, 0, 0, 0.6); /* Pink with opacity */
+  z-index: 2;
+}
+
+/* Content above overlay */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: #fff; /* text white for better contrast */
+}
+/* ===========================
+   HERO MOBILE FIX
+=========================== */
+@media (max-width: 576px) {
+
+  .hero-content{
+    max-width:100%;
+    padding:70px 18px 90px;
+    text-align:center;
+  }
+
+  .hero-title{
+    font-size:2.6rem;
+    line-height:1.15;
+  }
+
+  .hero-sub{
+    max-width:100%;
+    margin:0 auto 28px;
+    font-size:1rem;
+  }
+
+  .hero-buttons{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+    max-width:330px;
+    justify-content:center;
+    padding:15px 20px;
+  }
+
+  .hero-badges{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px;
+  }
+
+  .badge{
+    flex:0 0 auto;
+    padding:10px 16px;
+    font-size:.82rem;
+  }
+
+}
+  </style>
+    <div class="hero-badges">
+      <div class="badge"><span class="badge-icon">⭐</span><span>5/5 Rating</span></div>
+      <div class="badge"><span class="badge-icon"></span><span>Open 6am–12am</span></div>
+      <div class="badge"><span class="badge-icon"></span><span>Matli, Sindh</span></div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff9fb"/></svg>
+  </div>
+</section>
+
+<!-- ======================== WHATSAPP HIGHLIGHT BANNER ======================== -->
+<section class="wa-banner">
+  <div class="container wa-banner-inner">
+    <div class="wa-banner-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+    <div class="wa-banner-text">
+      <h2>Order Instantly on WhatsApp!</h2>
+      <p>Click any product's <strong>"Order on WhatsApp"</strong> button — your message is auto-filled with the product name &amp; quantity. Just hit send!</p>
+    </div>
+    <a href="https://wa.me/923063585556?text=Hi%20Friend%20Bakery%2C%20I%27d%20like%20to%20place%20an%20order!" target="_blank" class="btn btn-wa-white">
+      Chat with Us
+    </a>
+  </div>
+</section>
+
+<!-- ======================== CATEGORIES ======================== -->
+<section class="categories section">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Browse By</p>
+      <h2>Our Categories</h2>
+    </div>
+    <div class="cat-grid">
+      <a href="#menu" class="cat-item">
+        <div class="cat-icon">🍕</div>
+        <span>Pizza</span>
+      </a>
+      <a href="#menu" class="cat-item">
+        <div class="cat-icon">🎂</div>
+        <span>Cakes</span>
+      </a>
+      <a href="#menu" class="cat-item">
+        <div class="cat-icon">🍞</div>
+        <span>Breads</span>
+      </a>
+      <a href="#menu" class="cat-item">
+        <div class="cat-icon">🥐</div>
+        <span>Pastries</span>
+      </a>
+      <a href="#menu" class="cat-item">
+        <div class="cat-icon">🍪</div>
+        <span>Biscuits</span>
+      </a>
+      <a href="#menu" class="cat-item">
+        <div class="cat-icon">🥖</div>
+        <span>Rolls</span>
+      </a>
+      <a href="#extras" class="cat-item">
+        <div class="cat-icon">🍦</div>
+        <span>Kulfi</span>
+      </a>
+      <a href="#extras" class="cat-item">
+        <div class="cat-icon">🥤</div>
+        <span>Drinks</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== OPENING OFFERS ======================== -->
+<section class="offers section" id="offers">
+  <div class="offers-bg-img" style="background-image:url('images/offers-bg.jpg')"></div>
+  <div class="offers-overlay"></div>
+  <div class="container offers-inner">
+    <div class="section-head light">
+      <p class="section-eyebrow">Limited Time</p>
+      <h2>🔥 Grand Opening Offers!</h2>
+      <p class="section-desc">Celebrate our opening with unbeatable deals. Don't miss out!</p>
+    </div>
+    <div class="offers-grid">
+      <div class="offer-card">
+        <div class="offer-badge">3 for 1</div>
+        <img src="images/pizza.jpg" alt="Small Pizza" />
+        <div class="offer-info">
+          <h3>Small Pizza</h3>
+          <p class="offer-qty">3 Pieces</p>
+          <p class="offer-price">Rs. 900</p>
+          <button class="btn btn-wa" onclick="orderOnWhatsApp('Small Pizza x3 (Opening Offer)', 1, 900)">
+            Order on WhatsApp
+          </button>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-badge">2 for 1</div>
+        <img src="images/pizza.jpg" alt="Medium Pizza" />
+        <div class="offer-info">
+          <h3>Medium Pizza</h3>
+          <p class="offer-qty">2 Pieces</p>
+          <p class="offer-price">Rs. 1,200</p>
+          <button class="btn btn-wa" onclick="orderOnWhatsApp('Medium Pizza x2 (Opening Offer)', 1, 1200)">
+            Order on WhatsApp
+          </button>
+        </div>
+      </div>
+      <div class="offer-card featured">
+        <div class="offer-badge hot">🔥 Best Deal</div>
+        <img src="images/pizza.jpg" alt="Large Pizza" />
+        <div class="offer-info">
+          <h3>Large Pizza</h3>
+          <p class="offer-qty">2 Pieces</p>
+          <p class="offer-price">Rs. 2,000</p>
+          <button class="btn btn-wa" onclick="orderOnWhatsApp('Large Pizza x2 (Opening Offer)', 1, 2000)">
+            Order on WhatsApp
+          </button>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-badge">2 for 1</div>
+        <img src="images/pizza.jpg" alt="XL Pizza" />
+        <div class="offer-info">
+          <h3>XL Pizza</h3>
+          <p class="offer-qty">2 Pieces</p>
+          <p class="offer-price">Rs. 2,800</p>
+          <button class="btn btn-wa" onclick="orderOnWhatsApp('XL Pizza x2 (Opening Offer)', 1, 2800)">
+            Order on WhatsApp
+          </button>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-badge">3 for 1</div>
+        <img src="images/zinger-burger.jpg" alt="Zinger Burger" />
+        <div class="offer-info">
+          <h3>Zinger Burger</h3>
+          <p class="offer-qty">3 Pieces</p>
+          <p class="offer-price">Rs. 650</p>
+          <button class="btn btn-wa" onclick="orderOnWhatsApp('Zinger Burger x3 (Opening Offer)', 1, 650)">
+            Order on WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== MENU / PRODUCTS ======================== -->
+<section class="menu section" id="menu">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Fresh Daily</p>
+      <h2>Our Baked Goods</h2>
+      <p class="section-desc">Everything is baked fresh every morning. Choose your quantity and order instantly!</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="bread">Breads &amp; Rolls</button>
+      <button class="filter-btn" data-filter="pizza">Pizza</button>
+      <button class="filter-btn" data-filter="cake">Cakes</button>
+      <button class="filter-btn" data-filter="snack">Snacks</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <!-- Pizza Bread -->
+      <div class="product-card" data-category="pizza">
+        <div class="product-img-wrap">
+          <img src="images/pizza-bread.jpg" alt="Pizza Bread" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Pizza Bread','images/pizza-bread.jpg','Fresh pizza bread baked daily with tomato sauce and cheese topping.','Pizza Bread')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">Bakery Fresh</span>
+          <h3>Pizza Bread</h3>
+          <p>Crispy pizza-style bread with tangy tomato sauce and melted cheese.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Pizza Bread')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patties -->
+      <div class="product-card" data-category="snack">
+        <div class="product-img-wrap">
+          <img src="images/patties.jpg" alt="Patties" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Patties','images/patties.jpg','Golden flaky patties stuffed with spiced filling.','Patties')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">Best Seller</span>
+          <h3>Patties</h3>
+          <p>Golden flaky pastry patties stuffed with a savory spiced filling.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Patties')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biscuits -->
+      <div class="product-card" data-category="snack">
+        <div class="product-img-wrap">
+          <img src="images/biscuits.jpg" alt="Biscuits" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Biscuits','images/biscuits.jpg','Freshly baked crunchy biscuits and cookies.','Biscuits')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">Daily Fresh</span>
+          <h3>Biscuits</h3>
+          <p>Crunchy, freshly baked biscuits — perfect with your morning chai.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Biscuits')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bread -->
+      <div class="product-card" data-category="bread">
+        <div class="product-img-wrap">
+          <img src="images/bread.jpg" alt="Bread" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Bread','images/bread.jpg','Freshly baked artisan bread loaves, soft inside with golden crust.','Bread')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">Daily Fresh</span>
+          <h3>Bread</h3>
+          <p>Soft artisan bread loaves with a golden crust — baked fresh every morning.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Bread')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pizza Buns -->
+      <div class="product-card" data-category="pizza">
+        <div class="product-img-wrap">
+          <img src="images/pizza-buns.jpg" alt="Pizza Buns" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Pizza Buns','images/pizza-buns.jpg','Soft fluffy buns topped with cheese and herbs.','Pizza Buns')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">Fan Favourite</span>
+          <h3>Pizza Buns</h3>
+          <p>Soft fluffy buns loaded with cheese, herbs, and pizza sauce topping.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Pizza Buns')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.308-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastries -->
+      <div class="product-card" data-category="snack">
+        <div class="product-img-wrap">
+          <img src="images/pastry.jpg" alt="Pastries" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Pastries','images/pastry.jpg','Flaky golden pastries with sweet and savory fillings.','Pastries')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">New</span>
+          <h3>Pastries</h3>
+          <p>Golden flaky pastries with both sweet and savory fillings.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Pastries')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rolls -->
+      <div class="product-card" data-category="bread">
+        <div class="product-img-wrap">
+          <img src="images/rolls.jpg" alt="Rolls" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Rolls','images/rolls.jpg','Soft fresh-baked rolls, perfect with any meal.','Rolls')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">Soft &amp; Fresh</span>
+          <h3>Rolls</h3>
+          <p>Soft, pillowy dinner rolls — baked golden and warm every day.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Rolls')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Birthday Cakes -->
+      <div class="product-card" data-category="cake">
+        <div class="product-img-wrap">
+          <img src="images/birthday-cake.jpg" alt="Birthday Cakes" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Birthday Cake','images/birthday-cake.jpg','Custom birthday cakes with your preferred flavour and design.','Birthday Cake')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">🎂 Celebration</span>
+          <h3>Birthday Cakes</h3>
+          <p>Custom birthday cakes in your choice of flavour and decoration.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Birthday Cake')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Cakes -->
+      <div class="product-card" data-category="cake">
+        <div class="product-img-wrap">
+          <img src="images/custom-cake.jpg" alt="Custom Cakes" />
+          <div class="product-overlay">
+            <button class="btn btn-quick" onclick="openModal('Custom Cake','images/custom-cake.jpg','Bespoke custom cakes for weddings and special events.','Custom Cake')">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-tag">✨ Bespoke</span>
+          <h3>Custom Cakes</h3>
+          <p>Bespoke designer cakes for weddings, anniversaries &amp; any occasion.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Custom Cake')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end products-grid -->
+  </div>
+</section>
+
+<!-- ======================== EXTRAS ======================== -->
+<section class="extras section" id="extras">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Something Special</p>
+      <h2>Extras &amp; Beverages</h2>
+    </div>
+    <div class="extras-grid">
+
+      <div class="extra-card">
+        <div class="extra-img-wrap">
+          <img src="images/kulfi.jpg" alt="Kulfi Falooda" />
+        </div>
+        <div class="extra-info">
+          <span class="product-tag">Summer Special</span>
+          <h3>Kulfi Falooda</h3>
+          <p>Rich creamy kulfi with rose syrup, basil seeds, and chilled falooda — a refreshing classic.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Kulfi Falooda')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-card">
+        <div class="extra-img-wrap">
+          <img src="images/drinks.jpg" alt="Cold Drinks" />
+        </div>
+        <div class="extra-info">
+          <span class="product-tag">Refreshing</span>
+          <h3>Cold Drinks &amp; Limka</h3>
+          <p>Cool down with our selection of cold drinks including Limka and more chilled beverages.</p>
+          <div class="product-footer">
+            <div class="qty-wrap">
+              <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button class="btn btn-wa" onclick="orderProduct(this,'Cold Drinks / Limka')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section class="about section" id="about">
+  <div class="container about-inner">
+    <div class="about-img">
+      <img src="images/about.jpg" alt="Friend Bakery interior" />
+      <div class="about-stat-card">
+        <span class="stat-num">5★</span>
+        <span class="stat-label">Customer Rating</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-eyebrow">Our Story</p>
+      <h2>Baked Fresh, Served with Friendship</h2>
+      <p>At <strong>Friend Bakery</strong>, we believe good food brings people together. Located in Matli, we've been crafting fresh breads, cakes, pastries, and snacks with care and passion every single day.</p>
+      <p>From grand birthday cakes to everyday bread — everything leaves our kitchen fresh, warm, and made with the finest ingredients.</p>
+      <ul class="about-list">
+        <li>✅ Fresh baked daily from 6am</li>
+        <li>✅ Custom cake orders welcome</li>
+        <li>✅ WhatsApp ordering — instant &amp; easy</li>
+        <li>✅ Rated 5 out of 5 by our customers</li>
+      </ul>
+      <a href="https://wa.me/923063585556?text=Hi%20Friend%20Bakery%2C%20I%27d%20like%20to%20know%20more%20about%20your%20products!" target="_blank" class="btn btn-primary">Chat with Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TESTIMONIALS ======================== -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Happy Customers</p>
+      <h2>What People Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"The birthday cake they made for my son was absolutely beautiful and delicious! Everyone loved it. Will definitely order again!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <strong>Ayesha K.</strong>
+            <span>Matli</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card featured">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Ordered pizza buns through WhatsApp — so easy and fast! The buns were soft and fresh when they arrived. Best bakery in Matli hands down."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div>
+            <strong>Muhammad Ali</strong>
+            <span>Matli</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Their patties and pastries are incredible! We order them every Sunday morning for the family. The WhatsApp ordering is super convenient!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <strong>Sara Memon</strong>
+            <span>Matli</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== BLOG ======================== -->
+<section class="blog section" id="blog">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Baking Tips</p>
+      <h2>From Our Kitchen</h2>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="images/birthday-cake.jpg" alt="Cake tips" />
+          <span class="blog-cat">Cakes</span>
+        </div>
+        <div class="blog-body">
+          <p class="blog-date">July 25, 2025</p>
+          <h3>5 Tips for the Perfect Birthday Cake</h3>
+          <p>Planning a birthday celebration? Here's what makes our cakes stand out from the rest — from batter to decoration.</p>
+          <a href="https://wa.me/923063585556?text=Hi%2C%20I%20want%20to%20order%20a%20Birthday%20Cake!" target="_blank" class="blog-link">Order a Cake →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="images/bread.jpg" alt="Fresh bread" />
+          <span class="blog-cat">Bread</span>
+        </div>
+        <div class="blog-body">
+          <p class="blog-date">July 18, 2025</p>
+          <h3>Why Fresh-Baked Bread Makes a Difference</h3>
+          <p>There's nothing like fresh bread straight from the oven. Learn why our bread is baked daily and why it matters.</p>
+          <a href="https://wa.me/923063585556?text=Hi%2C%20I%20want%20to%20order%20Bread!" target="_blank" class="blog-link">Order Bread →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="images/pizza-bread.jpg" alt="Pizza tips" />
+          <span class="blog-cat">Pizza</span>
+        </div>
+        <div class="blog-body">
+          <p class="blog-date">July 10, 2025</p>
+          <h3>Our Grand Opening Pizza Deals — Explained</h3>
+          <p>Discover why our opening pizza deals are the best value in town, and how to grab them before they're gone!</p>
+          <a href="https://wa.me/923063585556?text=Hi%2C%20I%20want%20to%20order%20Pizza!" target="_blank" class="blog-link">Order Pizza →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONTACT ======================== -->
+<section class="contact section" id="contact">
+  <div class="container contact-inner">
+    <div class="contact-info">
+      <p class="section-eyebrow">Find Us</p>
+      <h2>Visit Friend Bakery</h2>
+      <div class="contact-items">
+        <div class="contact-item">
+          <span class="ci-icon">📍</span>
+          <div>
+            <strong>Address</strong>
+            <p>2MX2+8QW, Road, Matli, Sindh</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon">📞</span>
+          <div>
+            <strong>Phone / WhatsApp</strong>
+            <p><a href="tel:03063585556">0306 3585556</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon">⭐</span>
+          <div>
+            <strong>Rating</strong>
+            <p>5 out of 5 ⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon">🕐</span>
+          <div>
+            <strong>Opening Hours</strong>
+            <table class="hours-table">
+              <tr><td>Mon – Wed</td><td>6:00 AM – 12:00 AM</td></tr>
+              <tr class="urs"><td>Thu – Sat <span>(Urs Days)</span></td><td>6:00 AM – 12:00 AM</td></tr>
+              <tr class="sun"><td>Sunday</td><td>6:00 AM – 2:00 AM</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/923063585556?text=Hi%20Friend%20Bakery%2C%20I%27d%20like%20to%20place%20an%20order!" target="_blank" class="btn btn-wa btn-large">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Order on WhatsApp Now
+      </a>
+    </div>
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.0!2d68.8!3d25.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b88c2e6f4b0d1%3A0x1234567890abcdef!2sMatli%2C+Sindh%2C+Pakistan!5e0!3m2!1sen!2s!4v1720000000000!5m2!1sen!2s"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Friend Bakery Location – Matli"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-col brand-col">
+      <a href="#home" class="logo">
+        <span class="logo-icon"></span>
+        <span class="logo-text">Friend <em>Bakery</em></span>
+      </a>
+      <p>Freshly baked every day with love and care. Visit us in Matli or order instantly on WhatsApp.</p>
+      <a href="https://wa.me/923063585556" target="_blank" class="footer-wa">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +92 306 3585556
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#offers">Opening Offers</a></li>
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="#extras">Extras &amp; Drinks</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Products</h4>
+      <ul>
+        <li><a href="#menu">Pizza Bread &amp; Pizza Buns</a></li>
+        <li><a href="#menu">Patties &amp; Pastries</a></li>
+        <li><a href="#menu">Biscuits &amp; Rolls</a></li>
+        <li><a href="#menu">Fresh Bread</a></li>
+        <li><a href="#menu">Birthday &amp; Custom Cakes</a></li>
+        <li><a href="#extras">Kulfi Falooda &amp; Drinks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <ul class="hours-list">
+        <li><span>Mon – Wed</span><span>6am – 12am</span></li>
+        <li><span>Thu – Sat (Urs)</span><span>6am – 12am</span></li>
+        <li class="sun-row"><span>Sunday</span><span>6am – 2am</span></li>
+      </ul>
+      <p class="footer-addr"> 2MX2+8QW, Road, Matli</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Friend Bakery, Matli. All rights reserved. | Rated ⭐⭐⭐⭐⭐ by our customers</p>
+  </div>
+</footer>
+
+<!-- ======================== FLOATING WHATSAPP ======================== -->
+<a class="float-wa" href="https://wa.me/923063585556?text=Hi%20Friend%20Bakery%2C%20I%27d%20like%20to%20place%20an%20order!" target="_blank" aria-label="Order on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ======================== PRODUCT MODAL ======================== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <img src="" alt="" id="modalImg" />
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="product-footer" style="margin-top:1rem">
+        <div class="qty-wrap">
+          <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+          <span class="qty-val">1</span>
+          <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+        </div>
+        <button class="btn btn-wa" id="modalOrderBtn">Order on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
