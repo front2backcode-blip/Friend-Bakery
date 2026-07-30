@@ -125,6 +125,45 @@
   }
 
 }
+.offer-info{
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+}
+
+.offer-info .btn-wa{
+    width:100%;
+    justify-content:center;
+    text-align:center;
+    font-size:.72rem;
+    padding:10px 12px;
+}
+@media (max-width:576px){
+
+  .offers-grid{
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+  }
+
+  .offer-info{
+      padding:12px;
+  }
+
+  .offer-info h3{
+      font-size:1.05rem;
+  }
+
+  .offer-price{
+      font-size:1.2rem;
+  }
+
+  .offer-info .btn-wa{
+      width:100%;
+      font-size:.62rem;
+      padding:9px 8px;
+      justify-content:center;
+  }
+}
   </style>
     <div class="hero-badges">
       <div class="badge"><span class="badge-icon">⭐</span><span>5/5 Rating</span></div>
